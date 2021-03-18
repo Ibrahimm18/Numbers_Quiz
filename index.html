@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html lang  = "en">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie = edge">
-	<title>QuizApp </title>
-	<link href="style.css" rel="stylesheet">
-	<script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number_Games</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="container">
-    <div id="question-container" class="hide">
-      <div id="question">Question</div>
-      <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
-      </div>
+    <div class="main-ui">
+        <p class="problem"></p>
+        <form action="" class="our-form">
+            <input type="text" class="our-field" autocomplete="off">
+            <button>Submit</button>
+        </form>
+     <p>You Have <span class="points-needed">10</span> Points Available AND Only <span class="mistakes-allowed">2</span> Mistakes Allowed</p>
+     <div class="progress">
+         <div class="boxes">
+             <div class="box"></div>
+             <div class="box"></div>
+             <div class="box"></div>
+             <div class="box"></div>
+             <div class="box"></div>
+             <div class="box"></div>
+             <div class="box"></div>
+             <div class="box"></div>
+             <div class="box"></div>
+             <div class="box"></div>
+         </div>
+         <div class="progress-inner"></div>
+     </div>
     </div>
-		<div class="controls">
-			<button id="start-btn" class="start-btn btn">Start</button>
-			<button id="next-btn" class="next-btn btn hide" color= blue>Next</button>
-		</div>
-	</div>
 
+    <div class="overlay">
+        <div class="overlay-inner">
+            <p class="end-message"></p>
+            <button id="reset-button">BackToStart</button>
+        </div>
+       
+    </div>
+    
+    <script src="main.jsx"></script>
 </body>
 </html>
